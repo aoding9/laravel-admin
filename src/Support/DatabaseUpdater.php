@@ -176,7 +176,16 @@ class DatabaseUpdater
 
     public function transaction($callback)
     {
-        return DB::connection($this->connection())->transaction($callback);
+        $connection = DB::connection($this->connection());
+
+        // MySQL/MariaDB DDL（CREATE/DROP 等）会隐式提交，外层 transaction 的 commit 会报
+        // “There is no active transaction”，导致扩展市场等 update 脚本失败。
+        $driver = $connection->getDriverName();
+        if (in_array($driver, ['mysql', 'mariadb'], true)) {
+            return $callback();
+        }
+
+        return $connection->transaction($callback);
     }
 
     public function connection()
