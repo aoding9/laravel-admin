@@ -1,7 +1,7 @@
 {
     "name": "aoding9/laravel-admin",
     "description": "Dcat admin fork based on PrintNow/dcat-admin — Laravel 10-13 / PHP 8.1+ (incl. 8.5)",
-    "version": "2.4.3",
+    "version": "2.4.4",
     "type": "library",
     "keywords": [
         "dcat",
