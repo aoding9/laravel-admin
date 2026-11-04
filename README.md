@@ -5,14 +5,14 @@
 <br>
 
 <p align="center">
-    <a href="https://packagist.org/packages/printnow/laravel-admin"><img src="https://poser.pugx.org/printnow/laravel-admin/v/stable" /></a>
-    <a href="https://packagist.org/packages/printnow/laravel-admin"><img src="https://img.shields.io/packagist/dt/printnow/laravel-admin.svg" /></a>
-    <a href="https://packagist.org/packages/printnow/laravel-admin"><img src="https://img.shields.io/packagist/v/printnow/laravel-admin.svg" /></a>
+    <a href="https://packagist.org/packages/aoding9/laravel-admin"><img src="https://poser.pugx.org/aoding9/laravel-admin/v/stable" /></a>
+    <a href="https://packagist.org/packages/aoding9/laravel-admin"><img src="https://img.shields.io/packagist/dt/aoding9/laravel-admin.svg" /></a>
+    <a href="https://packagist.org/packages/aoding9/laravel-admin"><img src="https://img.shields.io/packagist/v/aoding9/laravel-admin.svg" /></a>
     <img src="https://img.shields.io/badge/PHP-8.1~8.5-59a9f8.svg?style=flat" />
     <img src="https://img.shields.io/badge/Laravel-10~13-59a9f8.svg?style=flat" />
 </p>
 
-[jqhph/dcat-admin](https://github.com/jqhph/dcat-admin) 的永久维护 fork。原项目已停止维护，本项目持续跟进 Laravel / PHP 新版本兼容、安全修复和功能增强。
+基于 [PrintNow/dcat-admin](https://github.com/PrintNow/dcat-admin) / [jqhph/dcat-admin](https://github.com/jqhph/dcat-admin) 的维护 fork（Packagist：`aoding9/laravel-admin`）。持续跟进 Laravel / PHP 新版本兼容（含 **PHP 8.5**、Laravel 13）、安全修复和功能增强。
 
 ## 兼容性
 
@@ -27,7 +27,7 @@
 ## 安装
 
 ```bash
-composer require printnow/laravel-admin
+composer require aoding9/laravel-admin
 ```
 
 发布资源并完成安装：
@@ -74,7 +74,7 @@ php artisan admin:install
 
 本项目已通过测试并在实际生产环境中使用，但无法保证所有修改绝对无误，上线前请充分测试。
 
-如果你在使用过程中遇到任何问题，欢迎[提交 Issue](https://github.com/PrintNow/dcat-admin/issues)，感谢每一位反馈和贡献的朋友。
+如果你在使用过程中遇到任何问题，欢迎[提交 Issue](https://github.com/aoding9/dcat-admin/issues)，感谢每一位反馈和贡献的朋友。
 
 ## License
 
