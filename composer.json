@@ -1,6 +1,7 @@
 {
-    "name": "printnow/laravel-admin",
-    "description": "Dcat admin 永久分叉版 / 支持 Laravel 10-13, PHP 版本限制 >= 8.1（支持 PHP 8.5）",
+    "name": "aoding9/laravel-admin",
+    "description": "Dcat admin fork based on PrintNow/dcat-admin — Laravel 10-13 / PHP 8.1+ (incl. 8.5)",
+    "version": "2.4.3",
     "type": "library",
     "keywords": [
         "dcat",
@@ -11,9 +12,13 @@
         "laravel admin",
         "dcat admin"
     ],
-    "homepage": "https://github.com/PrintNow/dcat-admin",
+    "homepage": "https://github.com/aoding9/dcat-admin",
     "license": "MIT",
     "authors": [
+        {
+            "name": "aoding9",
+            "email": "xy5217733@163.com"
+        },
         {
             "name": "Shine",
             "email": "i@nowtime.cc"
@@ -39,6 +44,10 @@
         "fakerphp/faker": "^1.24",
         "mockery/mockery": "^1.6"
     },
+    "replace": {
+        "dcat/laravel-admin": "self.version",
+        "printnow/laravel-admin": "self.version"
+    },
     "autoload": {
         "psr-4": {
             "Dcat\\Admin\\": "src/"
@@ -62,5 +71,7 @@
                 "Dcat\\Admin\\AdminServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
